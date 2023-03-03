@@ -11,8 +11,8 @@ else
   rm $TARGET_DIR/processed/kth.tar.gz
 
   for c in walking jogging running handwaving handclapping boxing
-  do  
-    URL=http://www.nada.kth.se/cvap/actions/"$c".zip
+  do
+    URL=http://www.csc.kth.se/cvap/actions/"$c".zip
     wget $URL -P $TARGET_DIR/raw
     mkdir $TARGET_DIR/raw/$c
     unzip $TARGET_DIR/raw/"$c".zip -d $TARGET_DIR/raw/$c
